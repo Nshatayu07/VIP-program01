@@ -25,14 +25,16 @@ jobs:
     steps:
     - uses: actions/checkout@v3      
 
-    - name: JSON file check
+    - name: Lint Filenames
       uses: batista/lint-filenames@v1.0.1
+
       with:
         path: "./fileName/jsonFile"
         pattern: "\\.json$"
 
-    - name: JSON file check
+    - name: Lint Filenames
       uses: batista/lint-filenames@v1.0.1
+
       with:
         path: "./fileName/xmlFile"
         pattern: "\\.xml$"
