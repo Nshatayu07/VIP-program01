@@ -1,4 +1,4 @@
-name: Validate JSONs
+name: Extension Checking
 
 on:
   push:
