@@ -1,0 +1,23 @@
+name: Lint
+
+on:
+  push:
+    branches: [main, master]
+
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  xml-linters:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+    - name: Download schema
+      run: wget https://apps.nextcloud.com/schema/apps/info.xsd
+    - name: Lint info.xml
+      uses: korelstar/xmllint-problem-matcher@v1
+      uses: ChristophWurst/xmllint-action@v1
+      with:
+        xml-file: ./Test/checkXmlRules.xml
+        xml-schema-file: ./customeRules/rule1.xsd
