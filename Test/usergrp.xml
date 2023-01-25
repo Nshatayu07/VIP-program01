@@ -1,0 +1,60 @@
+<syncdata version="1">
+    <syncoptions domain="your_profile_source_name" ldapid="1000">
+        <option name="syncCompanies">true</option>
+        <option name="syncLocations">true</option>
+        <option name="syncDepartments">true</option>
+        <option name="syncManagers">true</option>
+        <option name="actionDisabledUsers">d</option>
+        <option name="actionMissingDeletedUsers">d</option>
+        <option name="loginType">1</option>
+        <option name="defaultCulture">1</option>
+        <option name="newUserPasswordBehaviour">strict</option>
+    </syncoptions>
+    <users TotalUsers="1">
+        <user uid="14f90941-8aab-49d7-963b-841962dea5e9" dn="CN=Administrator,CN=Users,DC=somedomain,DC=com" username="administrator" email="Administrator@interact-intranet.com">
+            <person>
+                <firstname>Test</firstname>
+                <surname>Person</surname>
+                <title>Mr</title>
+                <initials>X</initials>
+                <jobtitle>Employee</jobtitle>
+                <phone applyBlank="true"/>
+                <mobile applyBlank="true"/>
+                <fax/>
+                <extension/>
+                <address>31 W 46th St, New York, NY 10036, United States</address>
+            </person>
+            <statusenabled>true</statusenabled>
+            <password>tkkt6jhvjhfvfuk</password>
+            <jobstartdate>2016-01-01</jobstartdate>
+            <dateofbirth>1950-09-25</dateofbirth>
+            <culture>1</culture>
+            <language id="1"/>
+            <timezone>Eastern Standard Time</timezone>
+            <bio>Mr Test Person has a wealth of experience in intranets and increasing employee engagement</bio>
+            <additionalfields>
+                <field name="first_aider">True</field>
+                <field name="car_registration">1234 ABC</field>
+            </additionalfields>
+            <manager uid="14f90941-8aab-49d7-963b-841962dea5e9" dn="CN=Administrator,CN=Users,DC=somedomain,DC=com" username="manager" email="manager@interact-intranet.com"/>
+            <organisations>
+                <organisation type="department" primary="true">Marketing</organisation>
+                <organisation type="department">Lead Generation</organisation>
+                <organisation type="company" primary="true">Acme</organisation>
+                <organisation type="location" primary="true">New York City</organisation>
+            </organisations>
+        </user>
+    </users>
+    <groups TotalUsers="1" TotalGroups="2">
+        <group UserCount="1" uid="cc0db17f-6602-45f2-8cfc-b4650a9cd508" dn="CN=Intranet Users,OU=IntranetUsers,OU=Groups,OU=NYC,OU=_Interact,DC=somedomain,DC=com" name="Our Intranet Users">
+            <users>
+                <user uid="14f90941-8aab-49d7-963b-841962dea5e9"></user>
+            </users>
+        </group>
+        <group UserCount="1" uid="4af17218-ce83-4fff-82ac-03e70b57f85c" dn="CN=Intranet Admins,OU=IntranetUsers,OU=Groups,OU=NYC,OU=_Interact,DC=somedomain,DC=com" name="Our Intranet Admins">
+            <users>
+                <user uid="14f90941-8aab-49d7-963b-841962dea5e9"></user>
+            </users>
+        </group>
+    </groups>
+</syncdata>
