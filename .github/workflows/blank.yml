@@ -28,3 +28,4 @@ jobs:
         with:
           eslint: true
           prettier: true          # Enable your linters here
+#           continue_on_error: true
