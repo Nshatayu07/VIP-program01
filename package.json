@@ -1,0 +1,19 @@
+{
+  "name": "vip-program01",
+  "version": "1.0.0",
+  "description": "This is for learning and practicing Github Actions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nshatayu07/VIP-program01.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nshatayu07/VIP-program01/issues"
+  },
+  "homepage": "https://github.com/Nshatayu07/VIP-program01#readme"
+}
