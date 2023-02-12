@@ -3,8 +3,8 @@
         enable="false"
         description="Limit access to administration console (AuthorizationManager)">
             <flipstrategy class="org.ff4j.strategy.el.ExpressionFlipStrategy">
-                <param name="expression" value="third second" />
-                <param name="expression" value="third second" />
+                <param name="expression" value="forth" />
+                <param name="expression" value="third" />
             </flipstrategy>
             <custom-properties>
                 <property name="ppint" value="12"/>
