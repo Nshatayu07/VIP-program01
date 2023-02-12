@@ -7,7 +7,7 @@
 
   <xs:simpleType name="paramValueLength">
     <xs:restriction base="xs:string">
-      <xs:maxLength value="30"/>
+      <xs:maxLength value="3"/>
     </xs:restriction>
   </xs:simpleType>
 
