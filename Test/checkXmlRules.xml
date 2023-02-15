@@ -6,9 +6,5 @@
                 <param name="expression" value="third second" />
                 <param name="expression" value="third second" />
             </flipstrategy>
-            <custom-properties>
-                <property name="ppint" value="12"/>
-                <property name="ppint" value="12"/>
-            </custom-properties>
-        </feature>
+            </feature>
 </features>
