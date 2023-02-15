@@ -1,5 +1,5 @@
 <features>
-    <feature uid="ff4j.consoleAdmin"
+    <feature uid="ff4j.consoleAdmin.Authenticated"
         enable="false"
         description="Limit access to administration console (AuthorizationManager)">
             <flipstrategy class="org.ff4j.strategy.el.ExpressionFlipStrategy">
