@@ -2,7 +2,7 @@
     <feature uid="ff4j.consoleAdmin"
         enable="false"
         description="Limit access to administration console (AuthorizationManager)">
-            <flipstrategy class="org.ff4j.strategy.el.ExpressionFlipStrategy">
+            <flipstrategy class="org.ff4j.el.ExpressionFlipStrategy">
                 <param name="expression" value="third second" />
                 <param name="expression" value="third second" />
             </flipstrategy>
