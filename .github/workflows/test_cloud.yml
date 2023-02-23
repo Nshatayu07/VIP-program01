@@ -21,4 +21,4 @@ jobs:
       - name: cfn-nag-action
         uses: minchao/cfn-nag-action@v0.1
         with:
-          args: '--input-path cloudformation/
+          args: "cloudformation/example.yaml"
