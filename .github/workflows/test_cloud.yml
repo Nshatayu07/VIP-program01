@@ -16,7 +16,7 @@ jobs:
       - name: cfn-lint-action
         uses: ScottBrenner/cfn-lint-action@1.6.1
         with:
-          args: "cloudformation/example.yaml"
+          args: cloudformation/example.yaml
 
       #- name: cfn-nag-action
        # uses: minchao/cfn-nag-action@v0.1
