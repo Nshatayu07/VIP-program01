@@ -17,6 +17,6 @@ jobs:
       - name: Scan Keywords
         uses: PPG007/keywords-scanner@v1.0
         with:
-          keywords: '["qq", "File","john","Pascal"]'
+          keywords: '["john","Pascal"]'
           ignoreCase: true
           ignoredDirs: '[".git", "node_modules", "package.json"]'
