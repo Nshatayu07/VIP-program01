@@ -1,0 +1,22 @@
+name: keyword checking
+
+on:
+  push:
+    branches: [main, master]
+
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: Scan Keywords
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Scan Keywords
+        uses: PPG007/keywords-scanner@v1.0
+        with:
+          keywords: '["qq", "File","john","Pascal"]'
+          ignoreCase: true
+          ignoredDirs: '[".git", "node_modules", "package.json"]'
