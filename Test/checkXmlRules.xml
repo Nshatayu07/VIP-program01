@@ -17,14 +17,14 @@
         enable="false"
         description="Limit access to administration console (AuthorizationManager)">
             <flipstrategy class="org.ff4j.strategy.el.ExpressionFlipStrategy">
-                <param name="expression" value="forth" />
-                <param name="expression" value="third" />
+                <param name="expression" value="first" />
+                <param name="expression" value="second" />
                 
             </flipstrategy>
             <custom-properties>
                 <jiraid name="pascal"/>
-                <property name="ppint" value="12"/>
-                <property name="ppint" value="12"/>
+                <property name="ppint" value="52"/>
+                <property name="ppint" value="52"/>
             </custom-properties> 
-         </feature> 
+        </feature> 
 </features>
