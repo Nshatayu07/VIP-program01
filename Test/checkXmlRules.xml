@@ -13,7 +13,7 @@
             </custom-properties>
         </feature>
     
-<!--     <feature uid="ff4j.consoleAdmmm"
+    <feature uid="ff4j.consoleAdmmm"
         enable="false"
         description="Limit access to administration console (AuthorizationManager)">
             <flipstrategy class="org.ff4j.strategy.el.ExpressionFlipStrategy">
@@ -25,6 +25,6 @@
                 <jiraid name="pascal"/>
                 <property name="ppint" value="12"/>
                 <property name="ppint" value="12"/>
-            </custom-properties> -->
-<!--         </feature> -->
+            </custom-properties> 
+         </feature> 
 </features>
