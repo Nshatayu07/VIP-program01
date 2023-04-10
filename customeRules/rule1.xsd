@@ -10,14 +10,14 @@
       <xs:maxLength value="30"/>
     </xs:restriction>
   </xs:simpleType>
-
+  
   <xs:element name="features">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="feature" >
+        <xs:element name="feature">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="flipstrategy" >
+              <xs:element name="flipstrategy">
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element name="param" maxOccurs="2" minOccurs="2">
@@ -37,6 +37,11 @@
               <xs:element name="custom-properties" minOccurs="0">
                 <xs:complexType>
                   <xs:sequence>
+                    <xs:element name="jiraid" maxOccurs="1" minOccurs="0">
+                      <xs:complexType>
+                        <xs:attribute name="name" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
                     <xs:element name="property" maxOccurs="unbounded" minOccurs="0">
                       <xs:complexType>
                         <xs:simpleContent>
