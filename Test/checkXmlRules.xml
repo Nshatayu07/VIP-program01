@@ -11,7 +11,7 @@
                 <property name="ppint" value="12"/>
             </custom-properties>
     </feature>
-    <feature uid="ff4j.consoleAdmmn"
+    <feature uid="ff4j.consoleAdmin"
         enable="false"
         description="Limit access to administration console (AuthorizationManager) 123">
             <flipstrategy class="org.ff4j.strategy.el.ExpressionFlipStrategy">
@@ -24,4 +24,40 @@
                 <property name="ppint" value="52"/>
             </custom-properties> 
     </feature> 
+    <feature uid="ff4j.consoleAdmin"
+        enable="false"
+        description="Limit access to administration console (AuthorizationManager)">
+            <flipstrategy class="org.ff4j.strategy.el.ExpressionFlipStrategy">
+                <param name="expression" value="fifth" />
+                <param name="expression" value="sixth" />
+            </flipstrategy>
+            <custom-properties>
+                <property name="ppint" value="62"/>
+                <property name="ppint" value="62"/>
+            </custom-properties>
+    </feature>
+    <feature uid="ff4j.consoleAdmin"
+        enable="false"
+        description="Limit access to administration console (AuthorizationManager)">
+            <flipstrategy class="org.ff4j.strategy.el.ExpressionFlipStrategy">
+                <param name="expression" value="seventh" />
+                <param name="expression" value="eight" />
+            </flipstrategy>
+            <custom-properties>
+                <property name="ppint" value="72"/>
+                <property name="ppint" value="72"/>
+            </custom-properties>
+    </feature>
+    <feature uid="ff4j.consoleAdmin"
+        enable="false"
+        description="Limit access to administration console (AuthorizationManager)">
+            <flipstrategy class="org.ff4j.strategy.el.ExpressionFlipStrategy">
+                <param name="expression" value="nine" />
+                <param name="expression" value="ten" />
+            </flipstrategy>
+            <custom-properties>
+                <property name="ppint" value="82"/>
+                <property name="ppint" value="82"/>
+            </custom-properties>
+    </feature>
 </features>
