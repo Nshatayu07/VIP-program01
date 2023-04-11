@@ -11,7 +11,7 @@
                 <property name="ppint" value="12"/>
             </custom-properties>
     </feature>
-    <feature uid="ff4j.consoleAdmin"
+    <feature uid="ff4j.consoleAamin"
         enable="false"
         description="Limit access to administration console (AuthorizationManager) 123">
             <flipstrategy class="org.ff4j.strategy.el.ExpressionFlipStrategy">
@@ -24,7 +24,7 @@
                 <property name="ppint" value="52"/>
             </custom-properties> 
     </feature> 
-    <feature uid="ff4j.consoleAdmin"
+    <feature uid="ff4j.consoleAddin"
         enable="false"
         description="Limit access to administration console (AuthorizationManager)">
             <flipstrategy class="org.ff4j.strategy.el.ExpressionFlipStrategy">
@@ -36,7 +36,7 @@
                 <property name="ppint" value="62"/>
             </custom-properties>
     </feature>
-    <feature uid="ff4j.consoleAdmin"
+    <feature uid="ff4j.consoleAdmmn"
         enable="false"
         description="Limit access to administration console (AuthorizationManager)">
             <flipstrategy class="org.ff4j.strategy.el.ExpressionFlipStrategy">
@@ -48,7 +48,7 @@
                 <property name="ppint" value="72"/>
             </custom-properties>
     </feature>
-    <feature uid="ff4j.consoleAdmin"
+    <feature uid="ff4j.consoleAdmii"
         enable="false"
         description="Limit access to administration console (AuthorizationManager)">
             <flipstrategy class="org.ff4j.strategy.el.ExpressionFlipStrategy">
