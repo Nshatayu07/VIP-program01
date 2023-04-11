@@ -60,4 +60,17 @@
                 <property name="ppint" value="82"/>
             </custom-properties>
     </feature>
+    <feature uid="ff4j.consollAamin"
+        enable="false"
+        description="Limit access to administration console (AuthorizationManager) 123">
+            <flipstrategy class="org.ff4j.strategy.el.ExpressionFlipStrategy">
+                <param name="expression" value="first" />
+                <param name="expression" value="second" />  
+            </flipstrategy>
+            <custom-properties>
+                <jiraid name="pascal"/>
+                <property name="ppint" value="52"/>
+                <property name="ppint" value="52"/>
+            </custom-properties> 
+    </feature>
 </features>
