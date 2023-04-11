@@ -11,13 +11,13 @@
     </xs:restriction>
   </xs:simpleType>
   
-  <xs:element name="features">
+  <xs:element name="features" minOccurs="1">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="feature">
+        <xs:element name="feature" minOccurs="1">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="flipstrategy">
+              <xs:element name="flipstrategy" minOccurs="1">
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element name="param" maxOccurs="2" minOccurs="2">
