@@ -14,10 +14,10 @@
   <xs:element name="features">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="feature" minOccurs="1">
+        <xs:element name="feature" maxOccurs="unbounded">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="flipstrategy" minOccurs="1">
+              <xs:element name="flipstrategy">
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element name="param" maxOccurs="2" minOccurs="2">
