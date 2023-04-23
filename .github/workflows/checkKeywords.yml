@@ -17,6 +17,6 @@ jobs:
       - name: Scan Keywords
         uses: PPG007/keywords-scanner@v1.0
         with:
-          keywords: '["john","Pascal","Fantasy"]'
+          keywords: '["access keys","secret keys","access key", "secret key", "access_key", "secret_key"]'
           ignoreCase: true
           ignoredDirs: '[".git", "node_modules", "package.json", ".github"]'
