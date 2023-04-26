@@ -150,6 +150,20 @@ Resources:
       Role: !GetAtt LambdaFunctionRole.Arn
       Runtime: !If [IsPowerShellLambda, 'dotnetcore2.1', !Ref LambdaRuntime]
       Timeout: !Ref LambdaTimeout
+      
+      Type: AWS::Serverless::Function
+      Properties:
+        Handler: index.handler
+        Runtime: nodejs12.x
+        Timeout: 10
+        Tracing: Active
+        Events:
+          Stream:
+            Type: Kinesis
+            Properties:
+              Stream: !GetAtt stream.Arn
+              BatchSize: 100
+              StartingPosition: LATEST
 
   LambdaFunctionRole:
     Type: AWS::IAM::Role
@@ -237,20 +251,6 @@ Resources:
       StreamSpecification:
         StreamViewType: NEW_IMAGE
         
-   LambdaFunction:
-    Type: AWS::Serverless::Function
-    Properties:
-      Handler: index.handler
-      Runtime: nodejs12.x
-      Timeout: 10
-      Tracing: Active
-      Events:
-        Stream:
-          Type: Kinesis
-          Properties:
-            Stream: !GetAtt stream.Arn
-            BatchSize: 100
-            StartingPosition: LATEST
   stream:
     Type: AWS::Kinesis::Stream
     Properties:
