@@ -11,7 +11,7 @@
       "MinLength": "1",
       "MaxLength": "2048",
       "ConstraintDescription" : "must contain only alphanumberic characters"
-    },
+    }
 
     "HashKeyElementType" : {
       "Description" : "HashType PrimaryKey Type",
