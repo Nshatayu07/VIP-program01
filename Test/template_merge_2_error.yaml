@@ -256,7 +256,7 @@
       "Value" : {"Ref" : "myDynamoDBTable"},
       "Description" : "Table name of the newly created DynamoDB table"
     }
-  },
+  
   
   "InstanceId" : {
       "Description" : "InstanceId of the newly created EC2 instance",
