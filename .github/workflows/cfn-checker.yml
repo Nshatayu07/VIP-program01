@@ -16,6 +16,6 @@ jobs:
       - name: cfn-lint-action
         uses: ScottBrenner/cfn-lint-action@v2.2.3
         with:
-          args: cfn-lint Test/template_merge_2_error.yaml
+          args: cfn-lint Test/template_merge2.yaml
           
     
