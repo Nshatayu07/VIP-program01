@@ -1,9 +1,9 @@
 {
-  "AWSTemplateFormatVersion" : "2010-09-09",
+  #"AWSTemplateFormatVersion" : "2010-09-09",
  
   "Description" : "AWS CloudFormation Sample Template DynamoDB_Table: This template demonstrates the creation of a DynamoDB table.  **WARNING** This template creates an Amazon DynamoDB table. You will be billed for the AWS resources used if you create a stack from this template.",
  
-  "Parameters" : {
+  #"Parameters" : {
     "HashKeyElementName" : {
       "Description" : "HashType PrimaryKey Name",
       "Type" : "String",
@@ -11,7 +11,7 @@
       "MinLength": "1",
       "MaxLength": "2048",
       "ConstraintDescription" : "must contain only alphanumberic characters"
-    #},
+    },
 
     "HashKeyElementType" : {
       "Description" : "HashType PrimaryKey Type",
@@ -208,7 +208,7 @@
 
   },
  
-  "Resources" : {
+  #"Resources" : {
     "myDynamoDBTable" : {
       "Type" : "AWS::DynamoDB::Table",
       "Properties" : {
