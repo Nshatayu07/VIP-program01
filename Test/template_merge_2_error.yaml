@@ -251,7 +251,7 @@
     }
   },
  
-  "Outputs" : {
+  #"Outputs" : {
     "TableName" : {
       "Value" : {"Ref" : "myDynamoDBTable"},
       "Description" : "Table name of the newly created DynamoDB table"
