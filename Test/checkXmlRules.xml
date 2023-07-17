@@ -1,10 +1,12 @@
 <features>
-    <feature uid="ff4j.consoleAdmin"
+    <feature uid="ff4j.consoleAdmin.auth"
         enable="false"
         description="Limit access to administration console (AuthorizationManager)">
-            <flipstrategy class="org.ff4j.strategy.el.ExpressionFlipStrategy">
+            <flipstrategy class="org.ff4j.strategy.ExpressionFlipStrategy">
                 <param name="expression" value="forth" />
                 <param name="expression" value="third" />
+                <param name="expression" value="third" />
+                
             </flipstrategy>
             <custom-properties>
                 <property name="ppint" value="12"/>
