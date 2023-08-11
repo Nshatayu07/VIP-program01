@@ -1,0 +1,21 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Lint Test CFN templates
+
+# Controls when the workflow will run
+on: push
+
+jobs:
+  Cloudformation-checker:
+    name: Check linting and securtity concerns
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        
+      - name: cfn-lint-action
+        uses: ScottBrenner/cfn-lint-action@v2.2.3
+        with:
+          args: cfn-lint Test/template_merge2.yaml
+          
+    
